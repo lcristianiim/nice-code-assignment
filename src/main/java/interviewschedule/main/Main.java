@@ -32,8 +32,6 @@ public class Main {
      * Have fun and good luck!
      */
     public static void main(String[] args) throws Exception {
-        String path = new URI(Main.class.getResource("/schedule.tsv").getFile()).getPath();
-
         ScheduleImpl schedule = new ScheduleImpl(new FileBasedDataRepo());
 
         List<List<String>> scheduleInThePast = schedule

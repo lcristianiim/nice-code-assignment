@@ -83,7 +83,7 @@ public class FileBasedDataRepo implements Repository {
 
     private List<String[]> readFileData() throws IOException {
         List<String[]> data = new ArrayList<>();
-        File file = new File(
+        File file =  new File(
                 Objects.requireNonNull(getClass().getClassLoader().getResource("test-schedule.tsv")).getFile() );
         BufferedReader br = new BufferedReader(new FileReader(file));
 
